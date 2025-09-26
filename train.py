@@ -74,6 +74,6 @@ def train_model(n_estimators):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--n_estimators", type=int, default=100, help="Number of estimators fro RandomForestClassifier")
+    parser.add_argument("--n_estimators", type=int, default=200, help="Number of estimators fro RandomForestClassifier")
     args = parser.parse_args()
     train_model(args.n_estimators)
