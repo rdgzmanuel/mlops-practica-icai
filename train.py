@@ -8,11 +8,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 import joblib
 import mlflow
-import mlflow.sklearn
 import matplotlib.pyplot as plt
 import seaborn as sns
 import argparse
-import dagshub
 import json
 
 def train_model(n_estimators):
