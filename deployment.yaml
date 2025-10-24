@@ -11,11 +11,11 @@ spec:
       app: mlops-api
   template:
     metadata:
-    labels:
-      app: mlops-api
-  spec:
-    containers:
-    - name: mlops-api
-      image: gcr.io/firm-container-476106-k5/mlops-api:latest # <--- Reemplaza con la ruta de tu imagen
-      ports:
-      - containerPort: 5000
+      labels:
+        app: mlops-api
+    spec:
+      containers:
+      - name: mlops-api
+        image: gcr.io/firm-container-476106-k5/mlops-api:latest # <--- Reemplaza con la ruta de tu imagen
+        ports:
+        - containerPort: 5000
