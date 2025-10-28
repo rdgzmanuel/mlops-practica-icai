@@ -4,12 +4,6 @@ FROM python:3.11-slim
 # Establecer el directorio de trabajo en el contenedor
 WORKDIR /app
 
-# Install system dependencies needed to build Python packages like psutil
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    python3-dev \
-    && rm -rf /var/lib/apt/lists/*
-
 # Copiar el archivo de requisitos e instalar las dependencias
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
