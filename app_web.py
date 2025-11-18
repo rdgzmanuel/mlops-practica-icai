@@ -16,7 +16,6 @@ sepal_width = st.slider('Ancho del sépalo (cm)', 0.0, 10.0, 3.0)
 petal_length = st.slider('Longitud del pétalo (cm)', 0.0, 10.0, 4.0)
 petal_width = st.slider('Ancho del pétalo (cm)', 0.0, 10.0, 1.0)
 
-
 # Botón para hacer la predicción
 if st.button('Obtener Predicción'):
     # Crear los datos en formato JSON
