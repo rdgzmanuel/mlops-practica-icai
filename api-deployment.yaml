@@ -18,4 +18,5 @@ spec:
       - name: mlops-api
         image: gcr.io/firm-container-476106-k5/mlops-api:latest # <--- Reemplaza con la ruta de tu imagen
         ports:
-        - containerPort: 5000
+        - name: metrics
+          containerPort: 5000

@@ -8,3 +8,4 @@ matplotlib
 Flask
 streamlit
 pyarrow==14.0.1
+prometheus-client
