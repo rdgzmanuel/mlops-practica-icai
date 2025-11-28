@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: mlops-api
-  podMetricsEndpoints:
+  endpoints:
     - port: metrics
       path: /metrics
       interval: 30s
